@@ -1,0 +1,27 @@
+      function submit(){
+        var inputElement = document.getElementById('link');
+        var word= inputElement.elements[0].value;
+        var final =images.innerHTML
+        final.push(word);
+        }
+        
+      function hide(){
+        var box =document.getElementById("links");
+        if(box.style.display=="none"){
+          box.style.display="block";
+        }
+        else{
+          box.style.display="none";
+        }
+      }
+      console.log(images);
+      
+      
+      
+      
+       
+  <div style="display:none" id="links">
+    <input type="text" id="link">
+    <button type="button" onclick="submit()">Submit</button>
+  </div>
+  <button type="button" onclick="hide()">Links</button>
